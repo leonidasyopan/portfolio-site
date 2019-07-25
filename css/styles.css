@@ -1,1 +1,123 @@
 /* MAIN STYLESHEET */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCFCFE;    
+}
+
+.content-width {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.clear-float {
+    clear: both;
+}
+
+main #image-section {    
+    color: #ffffff;
+}
+
+main #background-first-section{
+    /* Set rules to fill background width */
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: absolute;
+    top: 0;
+    left: 0;  
+    z-index: -1000;
+}
+
+
+/* THIS IS THE FIXED HEADER STYLE */
+
+/* Style the header */
+header {
+    padding: 10px 16px;
+    background: rgba(36, 35, 35, 0.637);
+    color: #f1f1f1;
+}
+  
+/* Page content */
+.content {
+    padding: 16px;
+}
+  
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+header img {
+    height: 80px;
+    width: auto;
+    padding: 10px 0;
+}
+
+header nav {
+    margin-top: 30px;
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+header nav ul li {
+    display: inline-block;  
+    
+    margin: 0;
+    padding: 0;	
+}
+
+header nav ul li a:link{
+    display: block;     
+    color: #F2F2F2;
+    text-decoration: none;	
+    font-size: 16px; 
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 20px;    
+    text-transform: uppercase;
+}
+
+header nav ul li a:visited{
+    
+}
+
+header nav ul li a:hover{
+    
+}
+
+header nav ul li a:active{
+    
+}
+
+
+@media screen and (max-width: 1024px) { /* Specific to the background image of first section*/
+    main #background-first-section {
+        left: 50%;
+        margin-left: -512px;   /* 50% */
+    }
+  }
