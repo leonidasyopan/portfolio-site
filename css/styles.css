@@ -1,5 +1,9 @@
 /* MAIN STYLESHEET */
 
+/* Importing Google Fonts */
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Six+Caps&display=swap" rel="stylesheet">
+
+/* This will reset the Box Sizing things. */
 * {
     margin: 0;
     padding: 0;
@@ -9,43 +13,29 @@
 
 body {
     background-color: #FCFCFE;    
+    font-family: 'Josefin Slab', serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Six Caps', sans-serif;
+}
+
+/* This class defines the area where the content will be located */
 .content-width {
     width: 1024px;
     margin: 0 auto;
 }
 
+/* Clear float class */
 .clear-float {
     clear: both;
 }
 
-main #image-section {    
-    color: #ffffff;
-}
-
-main #background-first-section{
-    /* Set rules to fill background width */
-    min-width: 1024px;
-
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-
-    /* Set up positioning */
-    position: absolute;
-    top: 0;
-    left: 0;  
-    z-index: -1000;
-}
-
-
 /* THIS IS THE FIXED HEADER STYLE */
 
 /* Style the header */
-header {
-    padding: 10px 16px;
-    background: rgba(36, 35, 35, 0.637);
+header {    
+    background: rgba(17, 1, 37, 0.75);
     color: #f1f1f1;
 }
   
@@ -66,14 +56,14 @@ header {
     padding-top: 102px;
 }
 
-header img {
-    height: 80px;
+header #logo {
+    height: 60px;
     width: auto;
-    padding: 10px 0;
+    padding: 10px 0 5px 0;
 }
 
 header nav {
-    margin-top: 30px;
+    margin-top: 15px;
     float: right;
 }
 
@@ -98,7 +88,7 @@ header nav ul li a:link{
     font-size: 16px; 
     font-weight: bold;
     margin: 0;
-    padding: 5px 20px;    
+    padding: 10px 20px;    
     text-transform: uppercase;
 }
 
@@ -113,6 +103,43 @@ header nav ul li a:hover{
 header nav ul li a:active{
     
 }
+
+main #image-section {    
+    color: #000000;
+    height: 100vh;
+    text-align: center;
+    padding-top: 40vh;
+}
+
+main #image-section h1 {
+    font-size: 3em;
+}
+
+main #image-section h2 {
+    font-size: 2em;
+}
+
+main #background-first-section{
+    /* Set rules to fill background width */
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: auto;
+    height: 100vh;
+
+/*
+    /* Set up proportionate scaling 
+    width: 100%;
+    height: auto;
+*/
+
+    /* Set up positioning */
+    position: absolute;
+    top: 0;
+    left: 0;  
+    z-index: -1000;
+}
+
 
 
 @media screen and (max-width: 1024px) { /* Specific to the background image of first section*/
