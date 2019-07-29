@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,900&display=swap');
+
 /* MAIN STYLESHEET */
 
 * {
@@ -9,6 +11,7 @@
 
 body {
     background-color: #FCFCFE;    
+    font-family: 'Roboto', sans-serif;
 }
 
 .content-width {
@@ -20,27 +23,10 @@ body {
     clear: both;
 }
 
-main #image-section {    
-    color: #ffffff;
-    height: 100vw;
-    width: auto;
+/* Page content */
+.content {
+    padding: 16px;
 }
-
-main #background-first-section{
-    /* Set rules to fill background width */
-    min-width: 1024px;
-
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-
-    /* Set up positioning */
-    position: absolute;
-    top: 0;
-    left: 0;  
-    z-index: -1000;
-}
-
 
 /* THIS IS THE FIXED HEADER STYLE */
 
@@ -49,11 +35,6 @@ header {
     padding: 10px 16px;
     background: rgba(36, 35, 35, 0.637);
     color: #f1f1f1;
-}
-
-/* Page content */
-.content {
-    padding: 16px;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -68,14 +49,13 @@ header {
     padding-top: 102px;
 }
 
-header img {
-    height: 80px;
-    width: auto;
-    padding: 10px 0;
+header #logo {
+    height: 50px;
+    width: auto;      
 }
 
 header nav {
-    margin-top: 30px;
+    margin-top: 15px;
     float: right;
 }
 
@@ -98,14 +78,13 @@ header nav ul li a:link{
     color: #F2F2F2;
     text-decoration: none;	
     font-size: 16px; 
-    font-weight: bold;
     margin: 0;
     padding: 5px 20px;    
     text-transform: uppercase;
 }
 
 header nav ul li a:visited{
-
+    color: #F2F2F2;
 }
 
 header nav ul li a:hover{
@@ -116,6 +95,26 @@ header nav ul li a:active{
 
 }
 
+main #image-section {    
+    color: #ffffff;
+    height: 100vw;
+    width: auto;
+}
+
+main #background-first-section{
+    /* Set rules to fill background width */
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: absolute;
+    top: 0;
+    left: 0;  
+    z-index: -1000;
+}
 
 @media screen and (max-width: 1024px) { /* Specific to the background image of first section*/
     main #background-first-section {
