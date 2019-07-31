@@ -33,7 +33,7 @@ h1 {
 
 h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-size: 30px;    
 }
 
 .content-width {
@@ -130,6 +130,12 @@ main #image-section {
 
 main #image-section h1 {
     margin-top: 35vh;    
+}
+
+main #image-section h2 {
+    font-size: 40px;
+    font-weight: normal;   
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5); 
 }
 
 main #rotating-header {
