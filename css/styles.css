@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,900&display=swap');
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
 
 /* MAIN STYLESHEET */
 
@@ -9,13 +10,33 @@
     box-sizing: border-box;
 }
 
+/* Color Theme Swatches in RGBA */
+.Tema-Cores-Ficha-Resumo---Site-1-rgba { color: rgba(191, 43, 82, 1); }
+.Tema-Cores-Ficha-Resumo---Site-2-rgba { color: rgba(59, 145, 255, 1); }
+.Tema-Cores-Ficha-Resumo---Site-3-rgba { color: rgba(253, 66, 100, 1); }
+.Tema-Cores-Ficha-Resumo---Site-4-rgba { color: rgba(105, 209, 230, 1); }
+.Tema-Cores-Ficha-Resumo---Site-5-rgba { color: rgba(77, 205, 195, 1); }
+
 body {
     background-color: #FCFCFE;    
-    font-family: 'Roboto', sans-serif;
+    /* font: 400 46px/1.2 'Montserrat', serif, sans-serif; */
+
+}
+
+h1 {    
+    font-family: 'Montserrat', serif, sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
 }
 
 .content-width {
-    width: 1024px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -25,15 +46,15 @@ body {
 
 /* Page content */
 .content {
-    padding: 16px;
+    padding: 60px;
 }
 
 /* THIS IS THE FIXED HEADER STYLE */
 
 /* Style the header */
 header {
-    padding: 10px 16px;
-    background: rgba(36, 35, 35, 0.637);
+    padding: 5px 16px 0 16px;
+    background: rgba(59, 145, 255, 0.75);
     color: #f1f1f1;
 }
 
@@ -50,12 +71,12 @@ header {
 }
 
 header #logo {
-    height: 50px;
-    width: auto;      
+    height: 40px;
+    width: auto;
+    margin: 5px 0 0 0;     
 }
 
-header nav {
-    margin-top: 15px;
+header nav {    
     float: right;
 }
 
@@ -77,28 +98,40 @@ header nav ul li a:link{
     display: block;     
     color: #F2F2F2;
     text-decoration: none;	
-    font-size: 16px; 
+    font-size: 13px; 
     margin: 0;
-    padding: 5px 20px;    
+    padding: 17px 20px;    
     text-transform: uppercase;
 }
 
 header nav ul li a:visited{
-    color: #F2F2F2;
+    color: #fff;
 }
 
 header nav ul li a:hover{
-
+    color: rgba(191, 43, 82, 1);
 }
 
 header nav ul li a:active{
-
+    color: rgba(105, 209, 230, 1);
 }
 
+/* FIRST SECTION - IMAGE FULL SCREEN*/
+
 main #image-section {    
-    color: #ffffff;
+    color: #fff;
     height: 100vw;
     width: auto;
+    text-align: center;
+    text-shadow: .5px .5px rgba(0, 0, 0, 0.5);
+}
+
+main #image-section h1 {
+    margin-top: 35vh;    
+}
+
+main #rotating-header {
+    margin-top: 10px;
 }
 
 main #background-first-section{
@@ -106,8 +139,8 @@ main #background-first-section{
     min-width: 1024px;
 
     /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 
     /* Set up positioning */
     position: absolute;
@@ -115,6 +148,9 @@ main #background-first-section{
     left: 0;  
     z-index: -1000;
 }
+
+/* SECOND SECTION - CONTACT SECTION */ 
+
 
 @media screen and (max-width: 1024px) { /* Specific to the background image of first section*/
     main #background-first-section {
