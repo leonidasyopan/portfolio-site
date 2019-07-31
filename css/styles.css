@@ -11,15 +11,16 @@
 }
 
 /* Color Theme Swatches in RGBA */
-.Tema-Cores-Ficha-Resumo---Site-1-rgba { color: rgba(191, 43, 82, 1); }
-.Tema-Cores-Ficha-Resumo---Site-2-rgba { color: rgba(59, 145, 255, 1); }
-.Tema-Cores-Ficha-Resumo---Site-3-rgba { color: rgba(253, 66, 100, 1); }
-.Tema-Cores-Ficha-Resumo---Site-4-rgba { color: rgba(105, 209, 230, 1); }
-.Tema-Cores-Ficha-Resumo---Site-5-rgba { color: rgba(77, 205, 195, 1); }
+.color-scheme-rgba-dark-red { color: rgba(191, 43, 82, 1); }
+.color-scheme-rgba-light-red { color: rgba(253, 66, 100, 1); }.color-scheme-rgba-light-blue { color: rgba(59, 145, 255, 1); }
+.color-scheme-rgba-dark-blue { color: rgba(23, 90, 179, 1); }
+.color-scheme-rgba-light-greenish  { color: rgba(105, 209, 230, 1); }
+.color-scheme-rgba-dark-greenish { color: rgba(77, 205, 195, 1); }
 
 body {
-    background-color: #FCFCFE;    
-    /* font: 400 46px/1.2 'Montserrat', serif, sans-serif; */
+    background-color: #fff;    
+
+    font: 400 15px 'Montserrat', serif, sans-serif;
 
 }
 
@@ -73,7 +74,7 @@ header {
 header #logo {
     height: 40px;
     width: auto;
-    margin: 5px 0 0 0;     
+    margin: 0;     
 }
 
 header nav {    
@@ -100,7 +101,7 @@ header nav ul li a:link{
     text-decoration: none;	
     font-size: 13px; 
     margin: 0;
-    padding: 17px 20px;    
+    padding: 10px 20px;    
     text-transform: uppercase;
 }
 
@@ -124,6 +125,7 @@ main #image-section {
     width: auto;
     text-align: center;
     text-shadow: .5px .5px rgba(0, 0, 0, 0.5);
+    
 }
 
 main #image-section h1 {
@@ -150,6 +152,62 @@ main #background-first-section{
 }
 
 /* SECOND SECTION - CONTACT SECTION */ 
+
+
+/* FOOTER */
+
+footer {
+    background: rgba(59, 145, 255, 1);
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: rgba(191, 43, 82, 1);
+    text-decoration: underline;
+}
+
+footer #contact-information-footer {
+    padding: 100px 0;    
+}
+
+footer #contact-information-footer h2 {
+    font-size: 45px;
+}
+
+footer #contact-information-footer h2 + p {
+    font-weight: bold;
+    margin: 5px 0 50px 0;
+}
+
+footer #contact-information-footer div div:nth-of-type(2) p:first-of-type {
+    
+    margin: 0 0 15px 0;
+}
+
+footer #contact-information-footer ul {
+    list-style-type: none;
+}
+
+footer #contact-information-footer ul li {
+    margin: 3px 0;
+}
+
+footer #contact-information-footer ul i {
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+footer #copyright-information-footer {
+    background: rgba(23, 90, 179, 1);  
+    padding: 30px 0;    
+    font-size: smaller;
+}
 
 
 @media screen and (max-width: 1024px) { /* Specific to the background image of first section*/
