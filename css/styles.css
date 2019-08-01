@@ -108,7 +108,7 @@ main #image-section {
     height: 65vh;
     width: auto;
     text-align: center;
-    text-shadow: .5px .5px rgba(0, 0, 0, 0.5);    
+    text-shadow: .5px .5px rgba(0, 0, 0, 0.5);      
 }
 
 main #image-section h1 {
@@ -126,19 +126,8 @@ main #rotating-header {
     margin-top: 10px;
 }
 
-main #background-first-section{
-    /* Set rules to fill background width */
-    min-width: 1024px;
-
-    /* Set up proportionate scaling */
-    width: auto;
-    height: 100%;
-
-    /* Set up positioning */
-    position: absolute;
-    top: 0;
-    left: 0;  
-    z-index: -1000;
+main #background-first-section {
+    display: none;    
 }
 
 /* SECOND SECTION - CONTACT SECTION */ 
@@ -263,7 +252,7 @@ footer #copyright-information-footer {
     main #contact-section i {
         margin-top: 0;
         margin-bottom: 10px;
-    }
+    }   
 
 }
 
@@ -322,6 +311,23 @@ footer #copyright-information-footer {
     
     main #image-section h2 {        
         font-size: 30px;    
+    }
+
+    main #background-first-section {
+        display: inherit;
+
+        /* Set rules to fill background width */
+        min-width: 1024px;
+    
+        /* Set up proportionate scaling */
+        width: auto;
+        height: 100%;
+    
+        /* Set up positioning */
+        position: absolute;
+        top: 0;
+        left: 0;  
+        z-index: -1000;
     }
     
 
