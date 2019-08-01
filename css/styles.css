@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400,700&display=swap');
 
+
+/*  
+// MOBILE FIRST APPROACH - GENERAL STYLE FIRST
+*/
+
 /* MAIN STYLESHEET */
 
 * {
@@ -24,217 +29,236 @@ body {
 h1 {    
     font-family: 'Montserrat', serif, sans-serif;
     font-weight: bold;
-    font-size: 80px;
-    
 }
 
 h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;    
-}
-
-.content-width {
-    max-width: 1080px;
-    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;      
 }
 
 .clear-float {
     clear: both;
 }
 
-/* Page content */
-.content {
-    padding: 60px;
+/*  
+// MEDIUM SCREENS - MEDIA QUERY BREAK
+*/
+@media (min-width:600px) {
+
 }
 
-/* THIS IS THE FIXED HEADER STYLE */
+/*  
+// BIG SCREENS - MEDIA QUERY BREAK
+*/
+@media (min-width:1025px) { 
 
-/* Style the header */
-header {
-    padding: 5px 16px 0 16px;
-    background: rgba(59, 145, 255, 0.75);
-    color: #f1f1f1;
-}
+    h1 {
+        font-size: 80px;        
+    }
+    
+    h2 {        
+        font-size: 30px;    
+    }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+    .content-width {
+        max-width: 1080px;
+        margin: 0 auto;
+    }    
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-    padding-top: 102px;
-}
+    /* Page content */
+    .content {
+        padding: 60px;
+    }
 
-header #logo {
-    height: 40px;
-    width: auto;
-    margin: 0;     
-}
+    /* THIS IS THE FIXED HEADER STYLE */
 
-header nav {    
-    float: right;
-}
+    /* Style the header */
+    header {
+        padding: 5px 16px 0 16px;
+        background: rgba(59, 145, 255, 0.75);
+        color: #f1f1f1;
+    }
 
-header nav ul {
-    list-style-type: none; 
-    padding: 0;
-    margin: 0;
-    font-size: 0;
-}
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
 
-header nav ul li {
-    display: inline-block;  
-    margin: 0;
-    padding: 0;	
-}
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+        padding-top: 102px;
+    }
 
-header nav ul li a:link{
-    display: block;     
-    color: #F2F2F2;
-    text-decoration: none;	
-    font-size: 13px; 
-    margin: 0;
-    padding: 10px 20px;    
-    text-transform: uppercase;
-}
+    header #logo {
+        height: 40px;
+        width: auto;
+        margin: 0;     
+    }
 
-header nav ul li a:visited{
-    color: #fff;
-}
+    header nav {    
+        float: right;
+    }
 
-header nav ul li a:hover{
-    color: rgba(191, 43, 82, 1);
-}
+    header nav ul {
+        list-style-type: none; 
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+    }
 
-header nav ul li a:active{
-    color: rgba(105, 209, 230, 1);
-}
+    header nav ul li {
+        display: inline-block;  
+        margin: 0;
+        padding: 0;	
+    }
 
-/* FIRST SECTION - IMAGE FULL SCREEN*/
+    header nav ul li a:link{
+        display: block;     
+        color: #F2F2F2;
+        text-decoration: none;	
+        font-size: 13px; 
+        margin: 0;
+        padding: 10px 20px;    
+        text-transform: uppercase;
+    }
 
-main #image-section {    
-    color: #fff;
-    height: 65vh;
-    width: auto;
-    text-align: center;
-    text-shadow: .5px .5px rgba(0, 0, 0, 0.5);    
-}
+    header nav ul li a:visited{
+        color: #fff;
+    }
 
-main #image-section h1 {
-    margin-top: 35vh;    
-}
+    header nav ul li a:hover{
+        color: rgba(191, 43, 82, 1);
+    }
 
-main #image-section h2 {
-    font-size: 40px;
-    font-weight: normal;   
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5); 
-}
+    header nav ul li a:active{
+        color: rgba(105, 209, 230, 1);
+    }
 
-main #rotating-header {
-    margin-top: 10px;
-}
+    /* FIRST SECTION - IMAGE FULL SCREEN*/
 
-main #background-first-section{
-    /* Set rules to fill background width */
-    min-width: 1024px;
+    main #image-section {    
+        color: #fff;
+        height: 65vh;
+        width: auto;
+        text-align: center;
+        text-shadow: .5px .5px rgba(0, 0, 0, 0.5);    
+    }
 
-    /* Set up proportionate scaling */
-    width: auto;
-    height: 100%;
+    main #image-section h1 {
+        margin-top: 35vh;    
+    }
 
-    /* Set up positioning */
-    position: absolute;
-    top: 0;
-    left: 0;  
-    z-index: -1000;
-}
+    main #image-section h2 {
+        font-size: 40px;
+        font-weight: normal;   
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.5); 
+    }
 
-/* SECOND SECTION - CONTACT SECTION */ 
+    main #rotating-header {
+        margin-top: 10px;
+    }
 
-main #contact-section {
-    display: flex;
-    height: 100px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
+    main #background-first-section{
+        /* Set rules to fill background width */
+        min-width: 1024px;
 
-main #contact-section a {    
-    text-decoration: none;
-    color: rgba(59, 145, 255, 1);
-    font-weight: bold;
-}
+        /* Set up proportionate scaling */
+        width: auto;
+        height: 100%;
 
-main #contact-section a:hover {
-    color: rgba(191, 43, 82, 1);
-    text-decoration: underline;
-}
+        /* Set up positioning */
+        position: absolute;
+        top: 0;
+        left: 0;  
+        z-index: -1000;
+    }
 
-main #contact-section div {
-    width: 33.33333333%;
-    text-align: center; 
-}
+    /* SECOND SECTION - CONTACT SECTION */ 
 
-main #contact-section i {
-    margin-bottom: 10px;
-    font-size: 40px;
-    color: rgba(59, 145, 255, 1);       
-    display: block;
-}
+    main #contact-section {
+        display: flex;
+        height: 100px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
 
-/* FOOTER */
+    main #contact-section a {    
+        text-decoration: none;
+        color: rgba(59, 145, 255, 1);
+        font-weight: bold;
+    }
 
-footer {
-    background: rgba(59, 145, 255, 1);
-    color: #fff;
-}
+    main #contact-section a:hover {
+        color: rgba(191, 43, 82, 1);
+        text-decoration: underline;
+    }
 
-footer a {
-    text-decoration: none;
-    color: #fff;
-}
+    main #contact-section div {
+        width: 33.33333333%;
+        text-align: center; 
+    }
 
-footer a:hover {
-    color: rgba(191, 43, 82, 1);
-    text-decoration: underline;
-}
+    main #contact-section i {
+        margin-bottom: 10px;
+        font-size: 40px;
+        color: rgba(59, 145, 255, 1);       
+        display: block;
+    }
 
-footer #contact-information-footer {
-    padding: 100px 0;    
-}
+    /* FOOTER */
 
-footer #contact-information-footer h2 {
-    font-size: 45px;
-}
+    footer {
+        background: rgba(59, 145, 255, 1);
+        color: #fff;
+    }
 
-footer #contact-information-footer h2 + p {
-    font-weight: bold;
-    margin: 5px 0 50px 0;
-}
+    footer a {
+        text-decoration: none;
+        color: #fff;
+    }
 
-footer #contact-information-footer div div:nth-of-type(2) p:first-of-type {    
-    margin: 0 0 15px 0;
-}
+    footer a:hover {
+        color: rgba(191, 43, 82, 1);
+        text-decoration: underline;
+    }
 
-footer #contact-information-footer ul {
-    list-style-type: none;
-}
+    footer #contact-information-footer {
+        padding: 100px 0;    
+    }
 
-footer #contact-information-footer ul li {
-    margin: 3px 0;
-}
+    footer #contact-information-footer h2 {
+        font-size: 45px;
+    }
 
-footer #contact-information-footer ul i {
-    margin-right: 10px;
-    text-align: center;
-}
+    footer #contact-information-footer h2 + p {
+        font-weight: bold;
+        margin: 5px 0 50px 0;
+    }
 
-footer #copyright-information-footer {
-    background: rgba(23, 90, 179, 1);  
-    padding: 30px 0;    
-    font-size: smaller;
+    footer #contact-information-footer div div:nth-of-type(2) p:first-of-type {    
+        margin: 0 0 15px 0;
+    }
+
+    footer #contact-information-footer ul {
+        list-style-type: none;
+    }
+
+    footer #contact-information-footer ul li {
+        margin: 3px 0;
+    }
+
+    footer #contact-information-footer ul i {
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    footer #copyright-information-footer {
+        background: rgba(23, 90, 179, 1);  
+        padding: 30px 0;    
+        font-size: smaller;
+    }
+
 }
 
 @media screen and (max-width: 1024px) { /* Specific to the background image of first section*/
