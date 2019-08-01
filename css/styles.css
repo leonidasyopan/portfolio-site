@@ -19,9 +19,7 @@
 
 body {
     background-color: #fff;    
-
     font: 400 15px 'Montserrat', serif, sans-serif;
-
 }
 
 h1 {    
@@ -90,7 +88,6 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;  
-
     margin: 0;
     padding: 0;	
 }
@@ -121,11 +118,10 @@ header nav ul li a:active{
 
 main #image-section {    
     color: #fff;
-    height: 100vw;
+    height: 65vh;
     width: auto;
     text-align: center;
-    text-shadow: .5px .5px rgba(0, 0, 0, 0.5);
-    
+    text-shadow: .5px .5px rgba(0, 0, 0, 0.5);    
 }
 
 main #image-section h1 {
@@ -159,6 +155,34 @@ main #background-first-section{
 
 /* SECOND SECTION - CONTACT SECTION */ 
 
+main #contact-section {
+    display: flex;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+main #contact-section a {    
+    text-decoration: none;
+    color: rgba(59, 145, 255, 1);
+    font-weight: bold;
+}
+
+main #contact-section a:hover {
+    color: rgba(191, 43, 82, 1);
+    text-decoration: underline;
+}
+
+main #contact-section div {
+    width: 33.33333333%;
+    text-align: center; 
+}
+
+main #contact-section i {
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: rgba(59, 145, 255, 1);       
+    display: block;
+}
 
 /* FOOTER */
 
@@ -190,8 +214,7 @@ footer #contact-information-footer h2 + p {
     margin: 5px 0 50px 0;
 }
 
-footer #contact-information-footer div div:nth-of-type(2) p:first-of-type {
-    
+footer #contact-information-footer div div:nth-of-type(2) p:first-of-type {    
     margin: 0 0 15px 0;
 }
 
@@ -208,13 +231,11 @@ footer #contact-information-footer ul i {
     text-align: center;
 }
 
-
 footer #copyright-information-footer {
     background: rgba(23, 90, 179, 1);  
     padding: 30px 0;    
     font-size: smaller;
 }
-
 
 @media screen and (max-width: 1024px) { /* Specific to the background image of first section*/
     main #background-first-section {
