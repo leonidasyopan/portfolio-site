@@ -280,12 +280,15 @@ main #contact-section i {
 }
 
 #portfolio-section figure figcaption {
-    display: none;    
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0.3s linear,opacity 0.3s linear; 
 }
 
 #portfolio-section figure:hover figcaption {
     height: 50px;
-    display: inherit;
+    visibility:visible;
+    opacity:1;
     background-color: rgba(253, 66, 100, .9);
     color: #fff;
     padding: 15px 5px;
