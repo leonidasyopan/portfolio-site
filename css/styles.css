@@ -241,6 +241,66 @@ main #contact-section i {
     grid-column: 1 / span 5;
 }
 
+/* PORTFOLIO SECTION */
+
+#portfolio-section {
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+#portfolio-section h2 {
+    font-size: 30px;
+    color: rgb(35, 35, 35);
+    padding-top: 40px;
+}
+
+#portfolio-section h3 {
+    color: rgb(100, 100, 100);
+    margin: 5px 0 60px 0; 
+}
+
+#portfolio-section h4 {
+    color: rgb(35, 35, 35);
+    margin: 40px 0 10px 0;
+    font-size: 20px;
+}
+
+#portfolio-section figure {
+    max-width: 95vw;    
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#portfolio-section a {
+    text-decoration: none;
+}
+
+#portfolio-section figure img {
+    width: 100%;
+}
+
+#portfolio-section figure figcaption {
+    display: none;    
+}
+
+#portfolio-section figure:hover figcaption {
+    height: 50px;
+    display: inherit;
+    background-color: rgba(253, 66, 100, .9);
+    color: #fff;
+    padding: 15px 5px;
+    text-align: center;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+}
+
+#portfolio-section figure img:hover {
+    cursor: pointer;
+    transform: scale(1.10);
+    transition-duration: 500ms;
+}
+
 /* FOOTER */
 
 footer {
@@ -345,6 +405,22 @@ footer #copyright-information-footer {
     
     #professional-description {
         grid-column: 2 / span 4;
+    }
+
+    /* PORTFOLIO SECTION */ 
+
+    #portfolio-section { 
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }    
+
+    .portfolio-samples {
+        display: flex;
+    }
+
+    #portfolio-section figure {            
+        margin-right: 30px;
+        margin-top: 10px;
     }
 
 }
