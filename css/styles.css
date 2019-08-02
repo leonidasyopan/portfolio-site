@@ -198,9 +198,29 @@ main #contact-section i {
 /* PROFESSIONAL PROFILE */
 
 #professional-profile {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     font-size: 16px;
     color: rgb(53, 53, 53);
+    padding: 20px 10px;
+}
+
+#professional-profile #heading-name {
+    grid-column: 1 / span 4;
+    font-size: 30px;
+    color: rgb(35, 35, 35);
+    margin-top: 40px;
+}
+
+#professional-profile #heading-title {
+    grid-column: 1 / span 4;
+    color: rgb(100, 100, 100);
+    margin: 5px 0 20px 0; 
+}
+
+#profile-picture figure {    
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 #professional-profile p {
@@ -210,13 +230,11 @@ main #contact-section i {
 }
 
 #profile-picture {
-    width: 44%;
-    margin-right: 1%;
+    grid-column: 1 / span 5;
 }
 
 #professional-description {
-    width: 54%;
-    margin-left: 1%;
+    grid-column: 1 / span 5;
 }
 
 /* FOOTER */
@@ -311,7 +329,17 @@ footer #copyright-information-footer {
     main #contact-section i {
         margin-top: 0;
         margin-bottom: 10px;
-    }   
+    }
+    
+    /* PROFESSIONAL PROFILE */
+
+    #profile-picture {
+        grid-column: 1 / span 1;
+    }
+    
+    #professional-description {
+        grid-column: 2 / span 4;
+    }
 
 }
 
@@ -387,8 +415,7 @@ footer #copyright-information-footer {
         top: 0;
         left: 0;  
         z-index: -1000;
-    }
-    
+    }    
 
     /* FOOTER */
 
