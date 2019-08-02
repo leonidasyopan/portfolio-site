@@ -160,6 +160,65 @@ main #contact-section i {
     display: block;
 }
 
+/* DOWNLOAD SECTION */ 
+
+#download-resume {
+    background: rgba(23, 90, 179, 1);
+    color: #fff;    
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12vh;
+    padding-bottom: 12vh;    
+}
+
+#download-resume p {
+    font-size: 30px;
+    font-family: 'Montserrat', serif, sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#download-resume a {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 20px 60px;
+    text-decoration: none;
+    color: #fff; 
+    font-size: 16px;
+}
+
+#download-resume a:hover {
+    cursor: pointer;
+    border: 2px solid rgba(253, 66, 100, 1);
+    color: #fff;
+    background: rgba(253, 66, 100, 0.3);
+}
+
+/* PROFESSIONAL PROFILE */
+
+#professional-profile {
+    display: flex;
+    font-size: 16px;
+    color: rgb(53, 53, 53);
+}
+
+#professional-profile p {
+    color: rgb(100, 100, 100);
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+#profile-picture {
+    width: 44%;
+    margin-right: 1%;
+}
+
+#professional-description {
+    width: 54%;
+    margin-left: 1%;
+}
+
 /* FOOTER */
 
 footer {
