@@ -105,14 +105,20 @@ header nav ul li a:active{
 
 main #image-section {    
     color: #fff;
-    height: 65vh;
-    width: auto;
     text-align: center;
-    text-shadow: .5px .5px rgba(0, 0, 0, 0.5);      
+    text-shadow: .5px .5px rgba(0, 0, 0, 0.5);    background-image: url("../img/computador-codigo-azulado.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-main #image-section h1 {
-    margin-top: 25vh;
+main #image-section #full-page-image {
+    padding-top: 30vh;
+    padding-bottom: 35vh;
+}
+
+main #image-section h1 {    
     font-size: 50px;    
 }
 
@@ -124,10 +130,6 @@ main #image-section h2 {
 
 main #rotating-header {
     margin-top: 10px;
-}
-
-main #background-first-section {
-    display: none;    
 }
 
 /* SECOND SECTION - CONTACT SECTION */ 
@@ -221,6 +223,8 @@ main #contact-section i {
 #profile-picture figure {    
     overflow: hidden;
     margin-bottom: 20px;
+    max-width: 100%;
+    margin-right: 20px;
 }
 
 #professional-profile p {
@@ -305,7 +309,6 @@ footer #copyright-information-footer {
     /* FIRST SECTION - IMAGE FULL SCREEN*/       
 
     main #image-section h1 {
-        margin-top: 30vh;
         font-size: 60px;        
     }
     
@@ -317,8 +320,7 @@ footer #copyright-information-footer {
         display: flex;
         flex-direction: row;
         height: 100px;
-        margin-bottom: 10px;
-        margin-top: 20px;
+        margin: 20px 0;
     }
 
     main #contact-section div {
@@ -332,6 +334,10 @@ footer #copyright-information-footer {
     }
     
     /* PROFESSIONAL PROFILE */
+
+    #professional-profile {
+        padding: 20px 20px;
+    }    
 
     #profile-picture {
         grid-column: 1 / span 1;
@@ -351,11 +357,6 @@ footer #copyright-information-footer {
     .content-width {
         max-width: 1080px;
         margin: 0 auto;
-    }    
-
-    /* Page content */
-    .content {
-        padding: 60px;
     }
 
     /* THIS IS THE FIXED HEADER STYLE */
@@ -375,6 +376,7 @@ footer #copyright-information-footer {
 
     header nav {    
         float: right;
+        padding: 0;
     }
 
     header nav ul {
@@ -391,31 +393,13 @@ footer #copyright-information-footer {
 
     /* FIRST SECTION - IMAGE FULL SCREEN*/
 
-    main #image-section h1 {
-        margin-top: 35vh;
+    main #image-section h1 {        
         font-size: 80px;        
     }
     
     main #image-section h2 {        
         font-size: 30px;    
-    }
-
-    main #background-first-section {
-        display: inherit;
-
-        /* Set rules to fill background width */
-        min-width: 1024px;
-    
-        /* Set up proportionate scaling */
-        width: auto;
-        height: 100%;
-    
-        /* Set up positioning */
-        position: absolute;
-        top: 0;
-        left: 0;  
-        z-index: -1000;
-    }    
+    }  
 
     /* FOOTER */
 
@@ -434,4 +418,4 @@ footer #copyright-information-footer {
         left: 50%;
         margin-left: -512px;   /* 50% */
     }
-  } 
+} 
