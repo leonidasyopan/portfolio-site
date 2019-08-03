@@ -132,9 +132,55 @@ main #rotating-header {
     margin-top: 10px;
 }
 
+/* VIDEO PRESENTATION SECTION */
+
+#video-presentation {
+    padding: 70px 0;
+    background-color: rgb(245, 245, 245);
+}
+
+#video-presentation iframe {
+    display: block;
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+#video-presentation #text-video-companion {
+    color: rgb(100, 100, 100);    
+    line-height: 25px;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#video-presentation #text-video-companion p:nth-of-type(2) {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 50px;    
+}
+
+#video-presentation #text-video-companion a {    
+    background-color: rgba(59, 145, 255, 0.25);
+    border: 2px solid rgba(59, 145, 255, 1);
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: rgba(59, 145, 255, 1); 
+    font-size: 16px;
+}
+
+#video-presentation #text-video-companion a:hover {
+    cursor: pointer;
+    border: 2px solid rgba(253, 66, 100, 1);
+    color: rgba(253, 66, 100, 1);
+    background: rgba(253, 66, 100, 0.3);
+}
+
 /* SECOND SECTION - CONTACT SECTION */ 
 
-main #contact-section {    
+#contact-section {    
     margin-top: 0;
     margin-bottom: 5vh;
     display: flex;
@@ -143,18 +189,18 @@ main #contact-section {
     text-align: center;
 }
 
-main #contact-section a {    
+#contact-section a {    
     text-decoration: none;
     color: rgba(59, 145, 255, 1);
     font-weight: bold;
 }
 
-main #contact-section a:hover {
+#contact-section a:hover {
     color: rgba(191, 43, 82, 1);
     text-decoration: underline;
 }
 
-main #contact-section i {
+#contact-section i {
     margin-top: 30px;
     margin-bottom: 5px;
     font-size: 40px;
@@ -379,21 +425,37 @@ footer #copyright-information-footer {
         font-size: 30px;    
     }
 
-    main #contact-section {
+    #contact-section {
         display: flex;
         flex-direction: row;
         height: 100px;
         margin: 20px 0;
     }
 
-    main #contact-section div {
+    #contact-section div {
         width: 33.33333333%;
         text-align: center; 
     }
 
-    main #contact-section i {
+    #contact-section i {
         margin-top: 0;
         margin-bottom: 10px;
+    }
+
+    /* VIDEO PRESENTATION SECTION */
+
+    #video-presentation .two-columns-fifty-fifty {
+        display: flex;
+    }
+
+    #video-presentation #text-video-companion {
+        width: 40%;
+        margin-left: 50px;
+        padding-top: 0px;
+    }
+
+    #video-presentation #text-video-companion a {  
+        padding: 20px 60px;
     }
     
     /* PROFESSIONAL PROFILE */
