@@ -253,15 +253,17 @@ main #rotating-header {
     padding: 20px 10px;
 }
 
-#professional-profile #heading-name {
+#professional-profile #profile-headings {
     grid-column: 1 / span 4;
+}
+
+#professional-profile #heading-name {    
     font-size: 30px;
     color: rgb(35, 35, 35);
     margin-top: 40px;
 }
 
-#professional-profile #heading-title {
-    grid-column: 1 / span 4;
+#professional-profile #heading-title {    
     color: rgb(100, 100, 100);
     margin: 5px 0 20px 0; 
 }
@@ -489,6 +491,30 @@ footer #copyright-information-footer {
     }
 
 }
+
+
+/* 
+// ANIMATING THE SLIDE IN CONTENT
+*/
+
+.slide-in {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.align-left {
+    transform: translateX(-30%) scale (0.95);
+}
+
+.align-right {
+    transform: translateX(30%) scale (0.95);
+}
+
+.active {
+    opacity: 1;
+    transform: translateX(0%) scale (1);
+}
+
 
 /*  
 // BIG SCREENS - MEDIA QUERY BREAK
